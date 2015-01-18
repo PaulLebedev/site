@@ -5,7 +5,7 @@ __just a site with git version control__
 
 ## Basic Features
 
-- Anyone can add issues or create pull request.
+- Anyone can open issues or create pull request.
 
 #TODO
 
