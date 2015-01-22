@@ -1,34 +1,34 @@
 $(function () {
 
-  var $menuViewSwicther = $.('#menu_view_switcher');
-  var $menuContainer = $.('nav');
-  
-  var menuViewSwitcherStatus = 'off';
+    var $menuViewSwicther = $('#menu_view_switcher');
+    var $menuContainer = $('nav');
+
+    var menuViewSwitcherStatus = 'off';
 
     // ***************************************************************************
     // Mouse click & Keyboard events
     // ***************************************************************************
 
-    $roomSwitcher.click(function () {
-        if(menuViewSwitcherStatus==='off'){
-        $menuViewSwicther.empty.append(menuFullView());
-        menuViewSwitcherStatus='on';
+    $menuViewSwicther.click(function () {
+        if (menuViewSwitcherStatus === 'off') {
+            $menuContainer.empty.append(menuFullView());
+            menuViewSwitcherStatus = 'on';
         }
         else {
-        $menuViewSwicther.empty.append(menuShortView());
-        menuViewSwitcherStatus='off';
+            $menuContainer.empty.append(menuShortView());
+            menuViewSwitcherStatus = 'off';
         }
     });
-    
+
     // ***************************************************************************
     // Helpers
     // ***************************************************************************
-    
+
     function menuFullView() {
-      return '';
-    };
-    
+        return '';
+    }
+
     function menuShortView() {
-      return '';
-    };
+        return '';
+    }
 });
