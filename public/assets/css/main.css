@@ -126,7 +126,7 @@ footer a:hover {
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+@media screen and (min-width: 700px) and (max-width: 1023px) {
 
     header {
         min-height: 80px;
@@ -146,7 +146,7 @@ footer a:hover {
 
 }
 
-@media screen and (min-width: 300px) and (max-width: 599px) {
+@media screen and (min-width: 300px) and (max-width: 699px) {
 
     header {
         min-height: 80px;
