@@ -1,0 +1,220 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: "Myriad Pro", "Arial", sans-serif;
+    min-width: 300px;
+    min-height: 480px;
+}
+
+/* custom html */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+form {
+    margin: 10px 0;
+}
+
+input, textarea {
+    margin: 2px;
+    padding: 2px;
+    background-color: #0f0f0f;
+    border: none;
+    color: red;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+}
+
+label {
+    color: red;
+    font-size: small;
+}
+
+/*header*/
+
+#header {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+/*main content*/
+
+#wrapper {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media only screen and (min-width: 962px){
+    #wrapper{
+        width: 960px;
+    }
+
+    #message-area {
+        width: 900px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 961px){
+    #wrapper{
+        width: 100%;
+    }
+    
+    #message-area {
+        width: 420px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 479px){
+    #wrapper{
+        width: 100%;
+    }
+    
+    #message-area {
+        width: 240px;
+    }
+}
+
+@media only screen and (min-height: 800px){
+    .pusher {
+        height: 200px;
+    }    
+}
+
+@media only screen and (max-height: 799px){
+    .pusher {
+        height: 40px;
+    }
+    
+    div div#message-area {
+        height: 160px;
+    }
+}
+
+
+
+.module_top_left {
+    top: 0px;
+    left: 0px;
+    text-align: left;
+}
+
+.module_top_right {
+    top: 0px;
+    right: 0px;
+    text-align: right;
+}
+
+.module_bot_left {
+    bottom: 0px;
+    left: 0px;
+    text-align: left;
+}
+
+.module_bot_right {
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+}
+
+.module_top_left, .module_top_right, .module_bot_left, .module_bot_right {
+    position: absolute;
+    padding: 10px;    
+}
+
+
+/*footer*/
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+/* helpers */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.big {    
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
+}
+
+.shadow {
+    /*color: #0f0f0f;*/
+    color: #7f0000;
+}
+
+.lineheight_none {
+    line-height: 1;
+}
+
+.lineheight_text, .lineheight_text p, .lineheight_text a {
+    line-height: 1.5;
+}
+
+.lineheight_header {
+    line-height: 2;
+}
+
+/*custom modules*/
+
+#message-area {
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #7f0000;
+    overflow-y: scroll;
+}
+
+#channel-area {
+    height: 80px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #7f0000;
+    overflow-y: scroll;
+}
+#messages, #channels {
+    list-style: none;
+}
+
+p.channel {
+    cursor: pointer;
+    text-decoration: underline;
+}
