@@ -79,6 +79,12 @@ main {
     background-color: #f5f5f5; //whitesmoke
 }
 
+main article section {
+    padding: 4px;
+    border: 1px dashed darkcyan;
+    margin: 5px;
+}
+
 footer {
     padding: 10px 0px;
     background-color: #4f448f; //darkslateblue
